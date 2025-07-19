@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>NASA Space Explorer</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
   <div class="container">
     <header class="site-header">
@@ -27,7 +29,19 @@
     </div>
   </div>
 
+  <!-- Modal structure -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="modal-close" class="modal-close">&times;</span>
+      <img id="modal-image" src="" alt="" />
+      <h2 id="modal-title"></h2>
+      <p id="modal-date"></p>
+      <p id="modal-explanation"></p>
+    </div>
+  </div>
+
   <script src="js/dateRange.js"></script>
   <script src="js/script.js"></script>
 </body>
+
 </html>
